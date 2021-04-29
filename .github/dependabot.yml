@@ -1,0 +1,18 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: image-size
+    versions:
+    - 0.9.4
+    - 0.9.5
+    - 0.9.7
+  - dependency-name: chai
+    versions:
+    - 4.3.0
+    - 4.3.1
+    - 4.3.3
